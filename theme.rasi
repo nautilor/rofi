@@ -1,0 +1,12 @@
+* {
+    main-bg:        #282828FF;       /* Gruvbox dark background */
+    darker-bg:          #1D2021FF;       /* Gruvbox darker background */
+    main-fg:          #EBDBB2FF;       /* Gruvbox foreground (cream) */
+    main-br:          #D3869BFF;       /* Gruvbox "pink" (soft purple-pink) */
+    main-ex:          #FABD2FFF;       /* Gruvbox yellow (for accents) */
+    select-bg:        #8EC07CFF;       /* Gruvbox teal-green (selection) */
+    select-fg:        #1D2021FF;       /* Gruvbox near-black (for contrast) */
+    alt-bg:           #3C383666;       /* Gruvbox brown-gray (semi-transparent) */
+    separatorcolor:   transparent;
+    border-color:     transparent;
+}

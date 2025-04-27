@@ -1,0 +1,83 @@
+// Config //
+configuration {
+    show-icons:                  false;
+    drun-display-format:         "{name}";
+    font:                        "JetBrainsMono Nerd Font 12";
+}
+
+@theme "~/.config/rofi/theme.rasi"
+
+
+// Main //
+window {
+		width:                       100px;
+    enabled:                     true;
+    fullscreen:                  false;
+    transparency:                "real";
+    cursor:                      "default";
+    spacing:                     0em;
+    border-radius:               12px;
+		border:											 20px;
+    border-color:                transparent;
+    background-color:            @main-bg;
+		location:   east;
+}
+mainbox {
+    enabled:                     true;
+    orientation:                 vertical;
+    children:                    [ "frame" ];
+    background-color:            transparent;
+}
+frame {
+    children:                    [ "listview" ];
+    background-color:            transparent;
+}
+
+
+// Lists //
+listview {
+    enabled:                     true;
+    spacing:                     10;
+    padding:                     10;
+    columns:                     1;
+    lines:										   4;
+    dynamic:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;
+    reverse:                     true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+		orientation:								 vertical;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     1em;
+    padding:                     10px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+		border-radius:							 8px;
+}
+element-icon {
+    cursor:                      inherit;
+    size:                        10em;
+    background-color:            transparent;
+    text-color:                  inherit;
+    expand:                      false;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
